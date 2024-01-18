@@ -1,0 +1,88 @@
+body {
+    background: linear-gradient(45deg, #001f3f, #004b87);
+    margin: 0;
+    font-family: 'Verdana', sans-serif;
+    text-align: center;
+}
+h1 {
+    color: aqua;
+    text-align: center;
+}
+button {
+    border: none;
+    font-size: 17px;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 8px 12px;
+    background: linear-gradient(to right, #3498db, #2ecc71);
+    color: #fff;
+    transition: background 0.3s, transform 0.2s;
+}
+button:hover {
+    background: linear-gradient(to right, #2ecc71, #3498db);
+    transform: scale(1.25);
+}
+#newarr,
+#bubble,
+#selection,
+#insertion,
+#merge,
+#quick,
+#sizer,
+#speed,
+#stop {
+    
+    margin-right: 20px;
+}
+#bar {
+    color: red;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    flex-direction: row;
+    padding: 20px 30px 0 10px;
+}
+
+.baritem {
+    background: yellow;
+    border: 1.25px solid blue;
+    width: 0.75%;
+    margin-right: 2px;
+}
+a {
+    text-decoration: none;
+    color: aqua;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #00FF00;
+}
+@media (max-width: 768px) {
+    button {
+        padding: 8px 10px;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #newarr,
+    #bubble,
+    #selection,
+    #insertion,
+    #merge,
+    #quick,
+    #sizer,
+    #speed,
+    #stop {
+        margin-right: 0;
+    }
+
+    #bar {
+        padding: 20px 10px 0 10px;
+        overflow-x: auto;
+    }
+
+    .baritem {
+        width: 1.5%;
+    }
+}
